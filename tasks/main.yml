@@ -23,3 +23,7 @@
     name: systemd-journald
     state: restarted
     daemon_reload: True
+
+- name: Install unarchive utils
+  apt:
+    name: "{{ unarchive_packages }}"

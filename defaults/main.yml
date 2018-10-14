@@ -6,3 +6,9 @@ common_packages:
   - sysstat
   - tmux
   - vim
+
+unarchive_packages:
+  - unzip
+  - gzip
+  - bzip2
+  - xz-utils
