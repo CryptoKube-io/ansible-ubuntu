@@ -1,0 +1,8 @@
+---
+common_packages:
+  - haveged
+  - htop
+  - pwgen
+  - sysstat
+  - tmux
+  - vim
