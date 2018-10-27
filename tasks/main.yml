@@ -1,4 +1,7 @@
 ---
+- name: Wait for Apt to become available
+  script: files/apt-wait.sh
+
 - name: Update packages
   apt:
     autoclean: yes
