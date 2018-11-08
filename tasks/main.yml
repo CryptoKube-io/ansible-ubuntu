@@ -1,6 +1,7 @@
 ---
 - name: Wait for Apt to become available
   script: files/apt-wait.sh
+  changed_when: false
 
 - name: Update packages
   apt:
