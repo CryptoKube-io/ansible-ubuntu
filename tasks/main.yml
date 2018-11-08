@@ -15,6 +15,11 @@
     name: "{{ common_packages }}"
     force_apt_get: true
 
+- name: Autoremove unused packages
+  apt:
+    autoremove: true
+    force_apt_get: true
+
 - name: Configure journalctl logging
   lineinfile:
     path: /etc/systemd/journald.conf
